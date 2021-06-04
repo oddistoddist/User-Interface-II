@@ -1,1 +1,273 @@
 /* Add CSS styling here */
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	/* border: 1px solid grey; */
+}
+/*General Styles*/
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.8rem;
+	color: #4f4f4f;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	background-color: #fffafa;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Odibee Sans', cursive;
+}
+h1 {
+	font-size: 5rem;
+}
+h2 {
+	font-size: 3.5rem;
+}
+h3 {
+	font-size: 2.5rem;
+}
+section {
+	padding: 4% 0;
+}
+a {
+	text-decoration: none;
+	color: #4f4f4f;
+}
+
+/* top section  */
+.home {
+	display: flex;
+	flex-wrap: wrap;
+}
+header {
+	background: rgba(92, 88, 88, 0.788);
+}
+.header {
+	margin-left: 3%;
+}
+.header nav {
+	display: flex;
+	margin: .5%;
+}
+.header nav a {
+	border: 1px solid #2e2e2e;
+	width: 4.5%;
+	text-align: center;
+}
+nav a:hover {
+	background: darkslategray;
+	color: #fff;
+}
+.home {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.top {
+	max-width: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.headshotdiv {
+	width: 50%;
+}
+.headshot {
+	width: 120%;
+}
+.myname {
+	padding: 6% 4% 0 0;
+	margin-bottom: 1%;
+	/* margin: 4% 0; */
+	/* margin: 15%; */
+}
+.othtop {
+	padding-top: 8%;
+	width: 40%;
+}
+.othtop a {
+	padding: .5% 1%;
+	margin: 1% 0;
+	border: 1px black solid;
+}
+.othtop div {
+	width: 40%;
+}
+.othtop div p {
+	width: 40%;
+}
+.bot {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.outer {
+	width: 22%;
+	height: 300px;
+	margin: 2% .5%;
+}
+.img {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: auto;
+}
+h5 {
+	margin: 0 3%;
+	text-align: center;
+}
+footer {
+	background: rgba(92, 88, 88, 0.788);
+}
+footer div {
+	margin: 1% 5% 2%;
+	text-align: center;
+	height: 16vh;
+}
+.lwys {
+	display: block;
+	padding: 0 auto;
+	text-align: center;
+	margin-bottom: 3%;
+	margin-top: 2%;
+}
+.cm {
+	padding: 1% 3.8%;
+	text-align: center;
+	border: 1px solid #2e2e2e;
+}
+.cm:hover {
+	background: darkslategray;
+	color: #fff;
+}

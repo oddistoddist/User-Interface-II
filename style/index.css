@@ -1,6 +1,6 @@
 /* Add CSS styling here */
 
-@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto&display=swap';
 
 html,
 body,
@@ -169,6 +169,7 @@ a {
 }
 header {
 	background: rgba(92, 88, 88, 0.788);
+	width: 100%;
 }
 .header {
 	margin-left: 3%;
@@ -182,7 +183,7 @@ header {
 	width: 4.5%;
 	text-align: center;
 }
-nav a:hover {
+.header nav a:hover {
 	background: darkslategray;
 	color: #fff;
 }
@@ -219,10 +220,11 @@ nav a:hover {
 	border: 1px black solid;
 }
 .othtop div {
-	width: 40%;
+	width: 80%;
+	overflow: hidden;
+	word-wrap: break-word;
 }
 .othtop div p {
-	width: 40%;
 }
 .bot {
 	display: flex;
@@ -249,6 +251,8 @@ h5 {
 }
 footer {
 	background: rgba(92, 88, 88, 0.788);
+
+	bottom: 0;
 }
 footer div {
 	margin: 1% 5% 2%;
@@ -270,4 +274,76 @@ footer div {
 .cm:hover {
 	background: darkslategray;
 	color: #fff;
+}
+@media (max-width: 800px) {
+	header {
+		background: #fffafa;
+	}
+	.header h1 {
+		text-align: center;
+		font-size: 10rem;
+	}
+	.header nav {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header nav a {
+		border: 1px solid #2e2e2e;
+		width: 38%;
+		text-align: center;
+	}
+	.top {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.headshotdiv {
+		width: 90vw;
+	}
+	.othtop {
+		display: flex;
+		flex-direction: column;
+		width: 90vw;
+		align-items: center;
+		padding-top: 1%;
+	}
+	.othtop h3 {
+		text-align: center;
+		padding-top: 1%;
+		font-size: 8rem;
+		padding-right: 0;
+	}
+	.othtop a {
+		font-size: 4rem;
+		padding: 2%;
+		align-items: center;
+	}
+	.myname {
+		margin: 0;
+		text-align: center;
+	}
+	.othtop p {
+		margin-top: 4%;
+		width: 95%;
+	}
+	.othtop div {
+		width: 95%;
+	}
+	.bot {
+		justify-content: space-around;
+	}
+	.outer {
+		width: 40%;
+	}
+}
+@media (max-width: 500px) {
+	.outer {
+		margin-bottom: 0;
+	}
+	.outer h5 {
+		margin: 0 4% 0 3%;
+	}
+	.outer .img {
+		height: 200px;
+	}
 }
